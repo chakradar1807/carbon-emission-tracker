@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Emission Reports — CarbonTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* small additions to your style.css for badges and failed rows */
+    .badge {
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:600;
+      font-size:13px;
+    }
+    .badge.pass { background:#dcfce7; color:#166534; }   /* green */
+    .badge.fail { background:#fee2e2; color:#991b1b; }   /* red */
+    tr.failed { background: linear-gradient(90deg, rgba(255,240,240,0.9), rgba(255,250,250,0.8)); }
+    .center { text-align:center; }
+    .small { font-size:13px; color:#555; }
+  </style>
+</head>
+
+<body>
+
+<div class="sidebar">
+  <h2>🌱 CarbonTrack</h2>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="index.html">Users</a>
+  <a href="activity.html">Add Activity</a>
+  <a href="reports.html">Reports</a>
+  <a href="emission-test.html">Emission Test</a>
+</div>
+
+<div class="main">
+  <h1>Emission Reports</h1>
+
+  <p class="small">Rows with <span class="badge fail">FAIL</span> indicate emissions above the safe threshold.</p>
+
+  <div id="reportArea">
+    <!-- table will be injected here -->
+  </div>
+
+</div>
+<h2>Failed Vehicles (High CO₂)</h2>
+
+<button onclick="loadFailures()">Check Failures</button>
+
+<div id="failureList"></div>
+<script src="js/app.js"></script>
+<script>
+  // call loadEmissions when this page loads
+  if (typeof loadEmissions === "function") loadEmissions();
+</script>
+
+</body>
+</html>

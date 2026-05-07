@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CarbonTrack Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="hero">
+
+<h1>🌱 Monitor Your Carbon Footprint</h1>
+
+<p>
+Track activities, analyze emissions and protect the environment.
+</p>
+
+</div>
+<div class="sidebar">
+
+<h2>🌱 CarbonTrack</h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="index.html">Users</a>
+<a href="activity.html">Add Activity</a>
+<a href="reports.html">Reports</a>
+
+
+</div>
+
+<div class="main">
+
+<h1>Emission Dashboard</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Users</h3>
+<p id="totalUsers">0</p>
+</div>
+
+<div class="card">
+<h3>Total Activities</h3>
+<p id="totalActivities">0</p>
+</div>
+
+<div class="card">
+<h3>Total CO₂</h3>
+<p id="totalCO2">0</p>
+</div>
+
+</div>
+
+</div>
+
+<script src="js/app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<canvas id="emissionChart" width="400"></canvas>
+</body>
+</html>

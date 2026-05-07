@@ -114,16 +114,19 @@ Implemented concurrency concepts to handle:
 
 ---
 
-## 📷 Project Screenshots
+## 📸 Project Screenshots
 
 ### Dashboard
-(Add screenshot here)
+![Dashboard](screenshots/dashboard.png)
 
 ### Users Page
-(Add screenshot here)
+![Users](screenshots/users.png)
 
 ### Reports Page
-(Add screenshot here)
+![Reports](screenshots/report.png)
+
+### Add Activity
+![Activity](screenshots/addactivity.png)
 
 ---
 
